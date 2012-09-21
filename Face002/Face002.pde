@@ -2,13 +2,13 @@ float rx, ry;
 Candide candide;
 
 void setup() {
-  size(600, 600, OPENGL);
+  size(600, 600, P3D);
   smooth();
   noStroke();
   fill(255, 250, 200);
   rx = 0;
   ry = 0;
-  candide = new Candide("candide3b.wfm");
+  candide = new Candide("candide3c.wfm");
 }
 
 void draw() {
@@ -17,8 +17,6 @@ void draw() {
   translate(width/2, height/2, 100);
   rotateX(radians(rx));
   rotateY(radians(ry));
-//  int unit = floor(random(57));
-//  candide.applyAU(unit);
   candide.render();
 }
 

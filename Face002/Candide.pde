@@ -11,8 +11,6 @@ class Candide {
     wfm = loadStrings(_s);
     parseWfm();
     apply = -1;
-    //   println((vertices[69].x+vertices[70].x+vertices[73].x+vertices[74].x)/4);
-    //     (vertices[68].y+vertices[69].y+vertices[71].y+vertices[72].y)/4);
   }
 
   private void parseWfm() {
